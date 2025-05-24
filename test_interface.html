@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding:5px;
+            margin-top: 20%;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border:3px groove #8cb4e8;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card-text {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .card-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="choice.php" style="position:absolute; top:2%;left:2%;"> <image src="undo.png"></image></a>
+    <div class="container">
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="ishihar_test/6-light.png" alt="Card image" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">اختبار عمى الالوان_ايشيهارا</h3>
+                    <a href="ishihar_test/ishihara_client.php" class="card-button">ابدء</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="image/c6a3f00d-a583-455c-b7ab-8fedaffb59b1.png" alt="Card image" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">اختبارالرؤيه_سنلين١</h3>
+                    <a href="senllen_client.php" class="card-button">ابدء</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="image/3a196b2e-67a8-4bff-a275-cccb1f2ccab8.png" alt="Card image" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">اختبارالرؤيه_سنلين2</h3>
+                    <a href="color2_client.php" class="card-button">ابدء</a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="image/f20033a0-9aae-4af3-a440-4458c6c2cc73.jpg" alt="Card image" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">اختبارالمنظار لتمييز الالوان</h3>
+                    <a href="color1_client.php" class="card-button">ابدء</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
