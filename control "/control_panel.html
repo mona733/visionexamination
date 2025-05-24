@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحه التحكم </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin-right: 250px; /* Offset for fixed sidebar */
+        }
+
+        .navbar {
+            position: fixed;
+            right: 0px;
+            top: 10px;
+            width: 250px;
+            height: 100vh;
+            background-color: #0d1b55;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .nav-list {
+            list-style: none;
+        }
+
+        .nav-item {
+            margin: 10px 0;
+        }
+
+        .nav-link {
+            color: #ecf0f1;
+            font-size:20px;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 12px;
+            display: block;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: #34495e;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .section {
+            background-color: #f5f6fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                margin-right: 0;
+                margin-bottom: 60px;
+            }
+
+            .navbar {
+                width: 100%;
+                height: 60px;
+                bottom: 0;
+                top: auto;
+                padding: 10px;
+            }
+
+            .nav-list {
+                display: flex;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            .nav-item {
+                margin: 0 1px;
+            }
+
+            .nav-link {
+                padding: 8px 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-link {
+                font-size: 14px;
+                padding: 6px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="navbar"  id="nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="performance.php" class="nav-link"> الاداء</a></li>
+            <li class="nav-item"><a href="home_server.php" class="nav-link">الصفحه الرئيسيه</a></li>
+            <li class="nav-item"><a href="users_server.php" class="nav-link">المستخدمين </a></li>
+            <li class="nav-item"><a href="question_server.php" class="nav-link">*التشخيصات*</a></li>
+            <li class="nav-item"><a href="medicine_server.php" class="nav-link">الادويه</a></li>
+            <li class="nav-item"><a href="lenses_server.php" class="nav-link">العدسات</a></li>
+            <li class="nav-item"><a href="ishihara_server.php" class="nav-link">اختبار ايشيهارا</a></li>
+            <li class="nav-item"><a href="senllen_server.php" class="nav-link">اختبار سنلين</a></li>
+            <li class="nav-item"><a href="senllen2_server.php" class="nav-link">اختبار  سنلين2</a></li>
+            <li class="nav-item"><a href="color1_server.php" class="nav-link">اختبار الالوان</a></li>
+            <li class="nav-item"><a href="report.php" class="nav-link">التقارير</a></li>
+            <li class="nav-item"><a href="consultion_server.php" class="nav-link">الاستشارات </a></li>
+            <li class="nav-item"><a href="content_server.php" class="nav-link">الرسائل </a></li>
+            <li class="nav-item"><a href="about_server.php" class="nav-link">عن الموقع</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+</body>
+</html>
